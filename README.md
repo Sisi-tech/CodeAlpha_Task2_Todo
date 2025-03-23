@@ -1,12 +1,12 @@
-# React + Vite
+# CodeAlpha Task 2 TO DO LIST
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Task description
+<p>Create a To-Do List web application using HTML, CSS, and JavaScript. Users can easily create, save, and organize their daily tasks. This app simplifies task management and provides a convenient way to track and prioritize tasks.</p>
 
-Currently, two official plugins are available:
+## GIF
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Installed the following:
+<ul>
+<li>npm install tailwindcss @tailwindcss/vite</li>
+<li>npm install prop-types<li>
+</ul>
