@@ -5,8 +5,6 @@
 
 ## GIF
 
-# Installed the following:
-<ul>
-    <li>npm install tailwindcss @tailwindcss/vite</li>
-    <li>npm install prop-types<li>
-</ul>
+## Installed the following:
+- [1] npm install tailwindcss @tailwindcss/vite</li>
+- [2] npm install prop-types<li>
