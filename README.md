@@ -7,6 +7,6 @@
 
 # Installed the following:
 <ul>
-<li>npm install tailwindcss @tailwindcss/vite</li>
-<li>npm install prop-types<li>
+    <li>npm install tailwindcss @tailwindcss/vite</li>
+    <li>npm install prop-types<li>
 </ul>
