@@ -6,7 +6,7 @@
 ## GIF
 <div>
     <a href="src/assets/TodoList.gif">
-        <img style="max-width:200px;" src="src/assets/todoList.png" alt="Todo List Preview" />
+        <img style="max-width:100px;" src="src/assets/todoList.png" alt="Todo List Preview" />
     </a>
 </div>
 
