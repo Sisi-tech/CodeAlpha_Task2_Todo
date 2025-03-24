@@ -9,7 +9,7 @@ function InputWithLabel({ id, value, onChange, children }) {
     }, []);
 
     return (
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-2 items-center">
             <label htmlFor={id}>{children}:</label>
             <input 
                 type="text"
@@ -17,7 +17,7 @@ function InputWithLabel({ id, value, onChange, children }) {
                 value={value}
                 onChange={onChange}
                 ref={inputRef}
-                className=""
+                className="border p-1 pl-2"
             />
         </div>
     )

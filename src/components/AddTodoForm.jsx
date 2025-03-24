@@ -8,14 +8,17 @@ const AddTodoForm = ({ onAddTodo }) => {
 
     const handleAddTodo = (e) => {
         e.preventDefault();
-        if (title.trim()) {
+        if (title.trim() && dueDate.trim()) {
             onAddTodo({
                 title,
-                dueDate
+                due: dueDate,
             });
-        };
-        setTitle("");
-        setDueDate("");
+            setTitle("");
+            setDueDate("");
+        } else {
+            alert("Both title and due date are required.")
+        }
+        
     }
     return (
         <form onSubmit={handleAddTodo} className='flex flex-col gap-4 w-full p-10 justify-center items-center'>
