@@ -4,7 +4,7 @@
 <p>Create a To-Do List web application using HTML, CSS, and JavaScript. Users can easily create, save, and organize their daily tasks. This app simplifies task management and provides a convenient way to track and prioritize tasks.</p>
 
 ## GIF
-<a href="./src/assets/TodoList.gif">
+<a href="./src/assets/todoList.mp4">
     <img style="max-width:300px;" src="./src/assets/todoList.png" alt="Todo List Preview" />
 </a>
 
