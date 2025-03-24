@@ -5,8 +5,8 @@
 
 ## GIF
 <div>
-    <a href="./assets/TodoList.gif">
-        <img style="max-width:300px;" src="./assets/todoList.png" alt="Todo List Preview" />
+    <a href="./src/assets/TodoList.gif">
+        <img style="max-width:300px;" src="./src/assets/todoList.png" alt="Todo List Preview" />
     </a>
 </div>
 
