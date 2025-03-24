@@ -22,7 +22,7 @@ const AddTodoForm = ({ onAddTodo }) => {
 
     }
     return (
-        <form onSubmit={handleAddTodo} className='flex flex-col gap-4 w-full p-10 justify-center items-center'>
+        <form onSubmit={handleAddTodo} className='flex flex-col gap-6 w-full p-10 justify-center items-center'>
             <InputWithLabel
                 type="text"
                 id="title"
@@ -51,7 +51,7 @@ const AddTodoForm = ({ onAddTodo }) => {
                     min={new Date().toISOString().split("T")[0]}
                 />
             </div>
-            <button type="submit" className="">Add</button>
+            <button type="submit" className="pl-4 pr-4 p-1 rounded-2xl bg-green-700 hover:bg-green-800 shadow-md shadow-gray-600 text-white">Add</button>
         </form>
     )
 };
