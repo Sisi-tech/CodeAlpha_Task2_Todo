@@ -9,8 +9,9 @@ const AddTodoForm = ({ onAddTodo }) => {
     const handleAddTodo = (e) => {
         e.preventDefault();
         if (title.trim() && dueDate.trim()) {
+            const formattedTitle = title.charAt(0).toUpperCase() + title.slice(1);
             onAddTodo({
-                title,
+                title: formattedTitle,
                 due: dueDate,
             });
             setTitle("");
@@ -18,24 +19,38 @@ const AddTodoForm = ({ onAddTodo }) => {
         } else {
             alert("Both title and due date are required.")
         }
-        
+
     }
     return (
         <form onSubmit={handleAddTodo} className='flex flex-col gap-4 w-full p-10 justify-center items-center'>
             <InputWithLabel
+                type="text"
                 id="title"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
+                placeholder="Add Todo Item"
             >
                 Title
             </InputWithLabel>
-            <InputWithLabel
+            {/* <InputWithLabel
+                type="date"
                 id="due"
                 value={dueDate}
                 onChange={(e) => setDueDate(e.target.value)}
             >
                 Due
-            </InputWithLabel>
+            </InputWithLabel> */}
+            <div className="flex gap-2 items-center">
+                <label htmlFor="dueDate">Due:</label>
+                <input
+                    type="date"
+                    id="dueDate"
+                    value={dueDate}
+                    onChange={(e) => setDueDate(e.target.value)}
+                    className="border p-1 pl-2 w-70"
+                    min={new Date().toISOString().split("T")[0]}
+                />
+            </div>
             <button type="submit" className="">Add</button>
         </form>
     )

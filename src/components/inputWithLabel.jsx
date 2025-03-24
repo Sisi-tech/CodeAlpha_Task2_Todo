@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 
-function InputWithLabel({ id, value, onChange, children }) {
+function InputWithLabel({ type, id, value, onChange, children, placeholder }) {
     const inputRef = useRef();
 
     useEffect(() => {
@@ -12,12 +12,13 @@ function InputWithLabel({ id, value, onChange, children }) {
         <div className="flex gap-2 items-center">
             <label htmlFor={id}>{children}:</label>
             <input 
-                type="text"
+                type={type}
                 id={id}
                 value={value}
                 onChange={onChange}
                 ref={inputRef}
-                className="border p-1 pl-2"
+                className="border p-1 pl-2 w-70"
+                placeholder={placeholder}
             />
         </div>
     )
